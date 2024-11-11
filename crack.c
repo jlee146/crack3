@@ -60,7 +60,6 @@ int main(int argc, char *argv[])
             // Keep track of how many hashes were found.
             count++;
         }
-
     }
 
     // TODO
