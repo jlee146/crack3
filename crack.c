@@ -50,12 +50,12 @@ int main(int argc, char *argv[])
         char *hashedPassword = md5(passwords, strlen(passwords));
 
         // Search for the password
-        char *found = substringSearchAA(hashedPassword, hashes, size);
+        char *found = linearSearch(hashedPassword, hashes, size);
 
         // If you find it, display the password and the hash.
         if (found)
         {
-            printf("%s : %s", passwords, found);
+            printf("%s : %s\n", found, passwords);
          
             // Keep track of how many hashes were found.
             count++;

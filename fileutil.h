@@ -13,3 +13,6 @@ char * substringSearchAA(char *target, char ** arr, int size);
 
 // Free the memory used by the array
 void freeAA(char ** arr, int size);
+
+// linear search function using exact string matches via strcmp
+char * linearSearch(char *target, char **lines, int size);
